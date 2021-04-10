@@ -1,6 +1,8 @@
 # local-video-server
 *Servidor XAMPP local para reprodução vídeos em uma rede local*
 
+![Local video server](https://raw.githubusercontent.com/jtrancozo/local-video-server/main/default.png)
+
 ## Motivação
 Eu tenho no desktop vários cursos que eu comprei e guardei todos em uma pasta.
 Para assistir na TV ou no celular era quase impossível. As vezes, só copiando fisicamente os arquivos para um pendrive ou upando na nuvem.
