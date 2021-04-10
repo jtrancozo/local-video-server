@@ -17,7 +17,7 @@
 
 <?php 
     $localFolder = 'D:/cursos/'; // Pasta local com os cursos
-    $GLOBALS["folderURI"] = "http://192.168.0.104:8080/cursos"; // URI que aponta para os cursos;
+    $GLOBALS["folderURI"] = "http://192.168.0.10/cursos"; // URI que aponta para os cursos;
 
     include 'functions.php'; 
 
