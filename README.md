@@ -14,10 +14,11 @@ No meu caso servidor XAMPP roda em um diretório e a pasta com os cursos está e
 Precisei criar um Alias em xampp > apache > conf > httpd.conf
 Isso garantiu que a pasta cursos externa fosse acessível pela url http://localhost/cursos ou http://seu-ip-local/cursos 
 
+```
 Alias /cursos "D:/cursos"
 
 <Directory "D:/cursos" >
     Options Indexes FollowSymLinks MultiViews
     Require all granted
 </Directory>
-
+```
