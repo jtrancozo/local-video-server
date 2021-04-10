@@ -9,13 +9,13 @@ Para assistir na TV ou no celular era quase impossível. As vezes, só copiando 
 
 O que eu fiz:
 
-Usei um servidor XAMPP local para hospedar um pequeno site em php, onde são listados todas as pastas e arquivos dentro delas.
+Usei um servidor XAMPP local para hospedar um pequeno site em PHP, onde são listados todas as pastas e arquivos dentro delas.
 O site lê o diretório principal e lista automaticamente os arquivos.
 
 ## Configuração:
-No meu caso servidor XAMPP roda em um diretório e a pasta com os cursos está em outro HDD.
-Precisei criar um Alias em xampp > apache > conf > httpd.conf
-Isso garantiu que a pasta cursos externa fosse acessível pela url http://localhost/cursos ou http://seu-ip-local/cursos 
+No meu caso, o servidor XAMPP roda em no diretório C:/ e a pasta com os cursos está em D:/.
+Precisei criar um Alias em `xampp > apache > conf > httpd.conf`.
+Isso garantiu que a pasta de cursos externa fosse acessível pela url http://localhost/cursos ou http://seu-ip-local/cursos 
 
 ```
 Alias /cursos "D:/cursos"
