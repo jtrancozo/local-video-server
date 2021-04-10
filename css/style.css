@@ -1,0 +1,119 @@
+* {box-sizing: border-box}
+body {margin: 0; font-family: 'Hind Siliguri', sans-serif;}
+
+#main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.my-video-dimensions {
+    width: 100vw;
+    height: 100vh;
+}
+
+#lista-wrapper {
+    background: rgba(255, 255, 255);
+    height: calc(100vh - 20px);
+    width: 400px;
+    padding: 15px;
+    max-width: calc(100% - 20px);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    transition: 0.4s ease-out;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#lista-wrapper.close {
+    transform: translateX(calc(-100% - 10px));
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#lista-wrapper.close .toggle {
+    transform: translateX(100%);
+}
+
+.lista {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.folder-title {
+    text-transform: uppercase;
+    color: #919192;
+    color: #333;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.folder-title span{
+    padding: 0 5px 0 10px;
+    background: rgb(226 244 249);
+}
+
+
+.title-level-2 span{
+    background: rgb(182 245 230);
+}
+
+.title-level-3 span{
+    background: rgb(182 245 196);
+}
+
+.link-player {
+    color: rgb(65, 64, 64);
+    display: block;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 4px 10px;
+    min-height: 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.link-player.active {
+    font-weight: bold;
+    background: rgb(241 241 241);
+}
+
+.link-player i {
+    margin-right: 8px;
+}
+
+.content {
+    padding-left: 8px;
+}
+
+.content.level-1 > .inner {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.content.level-1.show > .inner {
+    height: 100%
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%, 0);
+}
